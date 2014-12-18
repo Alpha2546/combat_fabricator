@@ -16,7 +16,7 @@
 		"acceleration": 75,
 		"brake": 20,
 		"move_speed": 75,
-		"turn_speed": 75,
+		"turn_speed": 110,
 		"dodge_radius": 0,
 		"dodge_multiplier": 0.0,
 		"aggressive_distance": 50.0,
@@ -42,6 +42,7 @@
 			}]
 		}
 	},
+	"maintain_priority_target": false,
 	"model": {
 		"filename": "/pa/units/air/bomber/bomber.papa",
 		"arrows": 5

@@ -1,9 +1,9 @@
 {
 	"base_spec": "/pa/units/sea/base_ship/base_ship.json",
-	"display_name": "!LOC(units:sun_fish.message):Sun Fish",
-	"description": "!LOC(units:scout_light_weaponry_fast_speed.message):Scout- Light weaponry, fast speed.",
-	"max_health": 100,
-	"build_metal_cost": 300,
+	"display_name": "!LOC(units:piranha.message):Piranha",
+	"description": "!LOC(units:scout_light_weaponry_fast_speed.message):Gunboat- Light weaponry, fast speed",
+	"max_health": 175,
+	"build_metal_cost": 150,
 	"spawn_layers": "WL_WaterSurface",
 	"unit_types": ["UNITTYPE_Naval",
 	"UNITTYPE_Scout",
@@ -13,9 +13,9 @@
 	"UNITTYPE_FactoryBuild"],
 	"navigation": {
 		"type": "deepwater",
-		"acceleration": 200,
-		"brake": 200,
-		"move_speed": 20,
+		"acceleration": 50,
+		"brake": 150,
+		"move_speed": 15,
 		"turn_speed": 180,
 		"turn_in_place": false
 	},
@@ -29,22 +29,18 @@
 				"layer": "surface_and_air",
 				"channel": "sight",
 				"shape": "capsule",
-				"radius": 100
+				"radius": 150
 			}]
 		}
 	},
 	"model": {
 		"filename": "/pa/units/sea/sea_scout/sea_scout.papa",
-		"animations": {
-			"idle": "/pa/units/sea/sea_scout/sea_scout_anim_idle.papa"
-		},
-		"animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
-		"arrows": 5
+		"animtree": "/pa/anim/anim_trees/turret_anim_tree.json"
 	},
 	"tools": [{
 		"spec_id": "/pa/units/sea/sea_scout/sea_scout_tool_weapon.json",
-		"aim_bone": "bone_root",
-		"muzzle_bone": "bone_root"
+		"aim_bone": "bone_turret",
+		"muzzle_bone": "socket_muzzle"
 	}],
 	"events": {
 		"build_complete": {
@@ -56,7 +52,7 @@
 		"died": {
 			"audio_cue": "/SE/Death/Sea",
 			"effect_spec": "/pa/effects/specs/default_naval_explosion.pfx",
-			"effect_scale": 1.0
+			"effect_scale": 0.65
 		}
 	},
 	"audio": {
@@ -70,7 +66,7 @@
 		}
 	},
 	"TEMP_texelinfo": 4.24257,
-	"mesh_bounds": [3,
-	10.5,
-	3.6]
+	"mesh_bounds": [4,
+	11,
+	4]
 }

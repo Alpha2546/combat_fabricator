@@ -11,7 +11,7 @@
 	"audio_loop": "/SE/Movement/missile/artillery_short_missile_fly_loop",
 	"events": {
 		"died": {
-			"audio_cue": "/SE/Impacts/missile_artillery_short",
+			"audio_cue": "/SE/Weapons/old/artillery_fire",
 			"effect_spec": "/pa/effects/specs/default_pelter_explosion.pfx"
 		}
 	}

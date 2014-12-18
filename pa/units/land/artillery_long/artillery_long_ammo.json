@@ -25,7 +25,7 @@
 	"audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
 	"events": {
 		"died": {
-			"audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+			"audio_cue": "/SE/Weapons/old/Land_Weapon_Fire_Artillery",
 			"effect_spec": "/pa/effects/specs/default_holkins_explosion.pfx"
 		}
 	}

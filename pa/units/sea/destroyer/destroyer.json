@@ -100,7 +100,7 @@
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Sea_large",
-			"effect_scale": 0.75
+			"effect_scale": 1.10
 		}
 	},
 	"audio": {

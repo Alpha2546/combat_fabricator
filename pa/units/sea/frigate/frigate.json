@@ -34,6 +34,12 @@
 				"channel": "sight",
 				"shape": "capsule",
 				"radius": 180
+			},
+			{
+				"layer": "underwater",
+				"channel": "sight",
+				"shape": "capsule",
+				"radius": 180
 			}]
 		}
 	},
@@ -56,6 +62,14 @@
 		"fire_event": "fired1",
 		"muzzle_bone": ["socket_rightMuzzle02",
 		"socket_leftMuzzle02"]
+	},
+	{
+		"spec_id": "/pa/units/sea/frigate/frigate_tool_weapon_torpedo.json",
+		"record_index": 2,
+		"aim_bone": "bone_root",
+		"muzzle_bone": "bone_root",
+		"fire_event": "fired2",
+		"show_range": false
 	}],
 	"events": {
 		"build_complete": {
@@ -70,6 +84,11 @@
 			"audio_cue": "/SE/Weapons/sea/frigate_fire_1",
 			"effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02",
 			"effect_scale": 0.5
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/sea/torpedo_fire",
+			"effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_torpedoMuzzle",
+			"effect_scale": 5.0
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Sea_large",

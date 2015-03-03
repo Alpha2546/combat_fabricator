@@ -84,6 +84,7 @@
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Bot",
+			"effect_spec": "/pa/effects/specs/dox_explosion.pfx",
 			"effect_scale": 0.7
 		}
 	},

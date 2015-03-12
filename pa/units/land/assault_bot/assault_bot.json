@@ -29,7 +29,7 @@
 		"type": "amphibious",
 		"acceleration": 50,
 		"brake": 50,
-		"move_speed": 20,
+		"move_speed": 18,
 		"turn_speed": 720
 	},
 	"physics": {
@@ -67,12 +67,9 @@
 	"tools": [{
 		"spec_id": "/pa/units/land/assault_bot/assault_bot_tool_weapon.json",
 		"aim_bone": "socket_aim",
-		"muzzle_bone": "socket_rightMuzzle"
-	},
-	{
-		"spec_id": "/pa/units/land/assault_bot/assault_bot_tool_weapon.json",
-		"aim_bone": "socket_aim",
-		"muzzle_bone": "socket_leftMuzzle"
+		"projectiles_per_fire": 2,
+		"muzzle_bone": ["socket_leftMuzzle",
+		"socket_rightMuzzle"]
 	}],
 	"events": {
 		"build_complete": {

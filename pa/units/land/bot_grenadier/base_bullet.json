@@ -12,7 +12,7 @@
 	},
 	"events": {
 		"died": {
-			"audio_cue": "/SE/Impacts/shell_bullet",
+			"audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
 			"effect_spec": "/pa/units/land/bot_grenadier/default_proj_explosion.pfx"
 		}
 	},

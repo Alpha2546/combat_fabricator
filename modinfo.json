@@ -14,7 +14,7 @@
 	  "in-game",
 	  "shader",
 	  "colours",
-	  "explosion",
+	  "explosion"
     ],
   "priority": 100
 }
